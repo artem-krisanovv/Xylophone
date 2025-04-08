@@ -19,31 +19,31 @@ class ViewController: UIViewController {
     
     @IBAction func keyPressed(_ sender: UIButton) {
         
-        if sender.backgroundColor == .systemRed {
+        if sender.titleLabel?.text == "C" {
             playSound()
         }
         
-        if sender.backgroundColor == .systemOrange {
+        if sender.titleLabel?.text == "D" {
             playSound1()
         }
         
-        if sender.backgroundColor == .systemYellow {
+        if sender.titleLabel?.text == "E" {
             playSound2()
         }
         
-        if sender.backgroundColor == .systemGreen {
+        if sender.titleLabel?.text == "F" {
             playSound3()
         }
         
-        if sender.backgroundColor == .systemBlue {
+        if sender.titleLabel?.text == "G" {
             playSound4()
         }
         
-        if sender.backgroundColor == .systemIndigo {
+        if sender.titleLabel?.text == "A" {
             playSound5()
         }
         
-        if sender.backgroundColor == .systemPurple {
+        if sender.titleLabel?.text == "B" {
             playSound6()
         }
     }
