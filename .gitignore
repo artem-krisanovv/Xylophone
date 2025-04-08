@@ -1,0 +1,79 @@
+# Xcode
+*.xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode Build
+build/
+DerivedData/
+
+# SwiftPM
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Archives
+*.xcarchive
+
+# SwiftPM Xcode integration
+/.swiftpm/xcode/package.xcworkspace/
+.swiftpm/
+
+# User-specific files
+*.swp
+*.swo
+*.DS_Store
+*.env
+*.log
+*.orig
+*.tmp
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Firebase
+GoogleService-Info.plist
+
+# App-specific
+*.pem
+*.mobileprovision
+*.cer
+*.p12
+
+# Misc
+.idea/
+.vscode/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.modulemap
+
+# XCFrameworks
+*.xcframework
+
+# Coverage / Test output
+*.profdata
+*.gcda
+
+# Simulator logs
+coreSimulator/
+
+# Lock files
+Cartfile.resolved
