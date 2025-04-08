@@ -10,38 +10,21 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var player: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    var player: AVAudioPlayer?
-
     @IBAction func keyPressed(_ sender: UIButton) {
-        playAudioFile()
+        playSound()
     }
     
-    var objPlayer: AVAudioPlayer?
-
-    func playAudioFile() {
-        guard let url = Bundle.main.url(forResource: "C", withExtension: "wav") else {
-            print("Audio file not found.")
-            return
-        }
-
-        do {
-            let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(.playback, mode: .default)
-            try audioSession.setActive(true)
-
-            objPlayer = try AVAudioPlayer(contentsOf: url)
-            objPlayer?.prepareToPlay()
-            objPlayer?.play()
-
-        } catch {
-            print("Audio playback error: \(error.localizedDescription)")
-        }
+    func playSound() {
+        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+        
     }
-    
 }
-
