@@ -18,40 +18,33 @@ class ViewController: UIViewController {
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
+        
         if sender.backgroundColor == .systemRed {
             playSound()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemOrange {
             playSound1()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemYellow {
             playSound2()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemGreen {
             playSound3()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemBlue {
             playSound4()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemIndigo {
             playSound5()
-        } else {
-            print("Wrong Key")
         }
+        
         if sender.backgroundColor == .systemPurple {
             playSound6()
-        } else {
-            print("Wrong Key")
         }
     }
     
